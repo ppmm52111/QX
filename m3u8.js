@@ -39,7 +39,7 @@
 
 [rewrite_local]
 
-^https?://(\w+\.bhhcdou\.cn)/(\w+)/\w{32}/\w{32}\.m3u8\? url script-request-header https://raw.githubusercontent.com/gjwj666/jichang/main/m3u8.js
+^https?://(\w+\.bhhcdou\.cn)/(\w+)/\w{32}/\w{32}\.m3u8\? url script-request-header https://raw.githubusercontent.com/ppmm52111/QX/main/m3u8.js
 
 [mitm] 
 
