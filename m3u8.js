@@ -56,7 +56,7 @@ let url = $request.url, headers = $request.headers;
 
 
 //替換 URL 中的子域名和删除查询参数
-Url = url.replace(/\/\/(?!long)[^\.]+\./,'//long.').replace(/\?.*/, '');
+url = url.replace('10play', 'bhhcdou',);
 
 // 检查是否含有 X-Playback-Session-Id 头部
 if (headers.hasOwnProperty("X-Playback-Session-Id")) {
