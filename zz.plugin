@@ -1,0 +1,22 @@
+#!name=zz
+
+#!desc=解锁zz
+
+#!homepage=
+
+#!author=by sihai
+
+#!icon=
+
+
+
+[Mitm]
+
+hostname =*douyin123*
+
+
+
+[Script]
+
+http-response ^http[s]?:\/\/.*\.douyin123\.cc\/index\.php\/App\/(Account\/Login|User\/Info|Index\/Update|Host\/Info).*$ requires-body=true script-path=https://raw.githubusercontent.com/ppmm52111/QX/main.zz.js
+http-request ^http[s]?:\/\/.*\.douyin123\.cc script-path=https://raw.githubusercontent.com/ppmm52111/QX/main/tk.js
