@@ -1,0 +1,115 @@
+port: 7890
+socks-port: 7891
+redir-port: 7892
+allow-lan: false
+log-level: info
+proxies:
+- name: "\u65E5\u672C1\U0001F1EF\U0001F1F5"
+  type: trojan
+  server: 49.212.170.40
+  port: 443
+  sni: hezijiasuqi.com
+  password: ab3173d2abc7d643b14dbc362e4f79ed
+  tcp: true
+  skip-cert-verify: true
+- name: "\u9999\u8549\U0001F34C\u8282\u70B9"
+  type: ssr
+  server: 154.26.183.56
+  port: 40089
+  password: jklbnm
+  protocol: auth_chain_a
+  obfs: plain
+  cipher: none
+  tcp: true
+- name: onsky
+  type: ss
+  server: 13.127.131.81
+  port: 443
+  password: amazonskr05
+  udp: false
+  cipher: aes-256-cfb
+- name: "\u95EA\u8FDE\u9999\u6E2F\U0001F1ED\U0001F1F0"
+  type: trojan
+  server: 183.179.43.253
+  port: 443
+  password: a428da1788a94b8197f291abb9236cf6
+  country: HK
+  tcp: true
+  skip-cert-verify: true
+- name: "\u95EA\u8FDE\u65E5\u672C\U0001F1EF\U0001F1F5"
+  type: trojan
+  server: 38.207.136.202
+  port: 443
+  password: a428da1788a94b8197f291abb9236cf6
+  country: JP
+  tcp: true
+  skip-cert-verify: true
+- name: "\u95EA\u8FDE\u97E9\u56FD\U0001F1F0\U0001F1F7"
+  type: trojan
+  server: 211.55.157.178
+  port: 443
+  password: a428da1788a94b8197f291abb9236cf6
+  country: KR
+  tcp: true
+  skip-cert-verify: true
+- name: "\u95EA\u8FDE\u65B0\u52A0\u5761\U0001F1F8\U0001F1EC"
+  type: trojan
+  server: 149.28.151.140
+  port: 443
+  password: a428da1788a94b8197f291abb9236cf6
+  country: SP
+  tcp: true
+  skip-cert-verify: true
+- name: "\u95EA\u8FDE\u53F0\u6E7E\U0001F1E8\U0001F1F3"
+  type: trojan
+  server: 220.130.58.29
+  port: 443
+  password: a428da1788a94b8197f291abb9236cf6
+  country: CH
+  tcp: true
+  skip-cert-verify: true
+proxy-groups:
+- name: SiHai
+  type: select
+  proxies:
+  - "\u81EA\u52A8"
+  - "\u8D1F\u8F7D\u5747\u8861"
+  - "\u65E5\u672C1\U0001F1EF\U0001F1F5"
+  - "\u9999\u8549\U0001F34C\u8282\u70B9"
+  - onsky
+  - "\u95EA\u8FDE\u9999\u6E2F\U0001F1ED\U0001F1F0"
+  - "\u95EA\u8FDE\u65E5\u672C\U0001F1EF\U0001F1F5"
+  - "\u95EA\u8FDE\u97E9\u56FD\U0001F1F0\U0001F1F7"
+  - "\u95EA\u8FDE\u65B0\u52A0\u5761\U0001F1F8\U0001F1EC"
+  - "\u95EA\u8FDE\u53F0\u6E7E\U0001F1E8\U0001F1F3"
+- name: "\u81EA\u52A8"
+  type: url-test
+  proxies:
+  - "\u65E5\u672C1\U0001F1EF\U0001F1F5"
+  - "\u9999\u8549\U0001F34C\u8282\u70B9"
+  - onsky
+  - "\u95EA\u8FDE\u9999\u6E2F\U0001F1ED\U0001F1F0"
+  - "\u95EA\u8FDE\u65E5\u672C\U0001F1EF\U0001F1F5"
+  - "\u95EA\u8FDE\u97E9\u56FD\U0001F1F0\U0001F1F7"
+  - "\u95EA\u8FDE\u65B0\u52A0\u5761\U0001F1F8\U0001F1EC"
+  - "\u95EA\u8FDE\u53F0\u6E7E\U0001F1E8\U0001F1F3"
+  url: http://www.gstatic.com/generate_204
+  interval: 300
+- name: "\u8D1F\u8F7D\u5747\u8861"
+  type: load-balance
+  proxies:
+  - "\u65E5\u672C1\U0001F1EF\U0001F1F5"
+  - "\u9999\u8549\U0001F34C\u8282\u70B9"
+  - onsky
+  - "\u95EA\u8FDE\u9999\u6E2F\U0001F1ED\U0001F1F0"
+  - "\u95EA\u8FDE\u65E5\u672C\U0001F1EF\U0001F1F5"
+  - "\u95EA\u8FDE\u97E9\u56FD\U0001F1F0\U0001F1F7"
+  - "\u95EA\u8FDE\u65B0\u52A0\u5761\U0001F1F8\U0001F1EC"
+  - "\u95EA\u8FDE\u53F0\u6E7E\U0001F1E8\U0001F1F3"
+  strategy: round-robin
+  disable-udp: true
+rules:
+- DOMAIN-SUFFIX,google.com,SiHai
+- "DOMAIN-SUFFIX,facebook.com,\u8D1F\u8F7D\u5747\u8861"
+- GEOIP,CN,DIRECT
+- MATCH,SiHai
