@@ -23,7 +23,7 @@ proxies:
   tcp: true
 - name: onsky
   type: ss
-  server: 13.127.131.81
+  server: 34.245.185.129
   port: 443
   password: amazonskr05
   udp: false
