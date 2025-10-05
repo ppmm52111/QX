@@ -53,7 +53,7 @@ proxies:
   country: HK
   tcp: true
   skip-cert-verify: true
-- name: 日本IEPL专线🇯🇵
+- name: 日本IPEL专线🇯🇵
   type: trojan
   server: 202.101.49.48
   port: 3387
