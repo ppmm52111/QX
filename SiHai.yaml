@@ -4,7 +4,64 @@ redir-port: 7892
 allow-lan: false
 log-level: info
 proxies:
-- name: "\u65E5\u672C1\U0001F1EF\U0001F1F5"
+- { name:  蜜蜂🐝, type: vmess, server: 38.11.46.214, port: 37009, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, udp: true, tls: true, tfo: false, skip-cert-verify: true, servername: www.32675228.xyz,network: ws, ws-opts: { path: /path/171727290808, headers: { Host: www.32675228.xyz } }, ws-path: /path/171727290808, ws-headers: { Host: www.32675228.xyz } }
+- name: 香港移动专线🇭🇰
+  type: trojan
+  server: 120.232.159.56
+  port: 3387
+  password: 463dab88235b4ddab655b38eaa4549d8
+  country: HK
+  tcp: true
+  skip-cert-verify: true
+- name: 香港电信专线🇭🇰
+  type: trojan
+  server: 59.37.173.52
+  port: 3387
+  password: 463dab88235b4ddab655b38eaa4549d8
+  country: HK
+  tcp: true
+  skip-cert-verify: true
+- name: 香港联通专线🇭🇰
+  type: trojan
+  server: 58.254.183.231
+  port: 3387
+  password: 463dab88235b4ddab655b38eaa4549d8
+  country: HK
+  tcp: true
+  skip-cert-verify: true
+- name: 香港移动专线2🇭🇰
+  type: trojan
+  server: 120.232.159.57
+  port: 3387
+  password: 463dab88235b4ddab655b38eaa4549d8
+  country: HK
+  tcp: true
+  skip-cert-verify: true
+- name: 香港联通专线2🇭🇰
+  type: trojan
+  server: 58.254.183.232
+  port: 3387
+  password: 463dab88235b4ddab655b38eaa4549d8
+  country: HK
+  tcp: true
+  skip-cert-verify: true
+- name: 香港电信专线2🇭🇰
+  type: trojan
+  server: 59.37.173.53
+  port: 3387
+  password: 463dab88235b4ddab655b38eaa4549d8
+  country: HK
+  tcp: true
+  skip-cert-verify: true
+- name: 日本IEPL专线🇯🇵
+  type: trojan
+  server: 202.101.49.48
+  port: 3387
+  password: 463dab88235b4ddab655b38eaa4549d8
+  country: HK
+  tcp: true
+  skip-cert-verify: true
+- name: 日本专线🇯🇵
   type: trojan
   server: 49.212.170.40
   port: 443
@@ -12,7 +69,7 @@ proxies:
   password: ab3173d2abc7d643b14dbc362e4f79ed
   tcp: true
   skip-cert-verify: true
-- name: "\u9999\u8549\U0001F34C\u8282\u70B9"
+- name: 香蕉🍌
   type: ssr
   server: 154.26.183.56
   port: 40089
@@ -21,14 +78,14 @@ proxies:
   obfs: plain
   cipher: none
   tcp: true
-- name: onsky
+- name: onskr
   type: ss
-  server: 34.245.185.129
+  server: 13.127.131.81
   port: 443
   password: amazonskr05
   udp: false
   cipher: aes-256-cfb
-- name: "\u95EA\u8FDE\u9999\u6E2F\U0001F1ED\U0001F1F0"
+- name: 闪连香港🇭🇰
   type: trojan
   server: 183.179.43.253
   port: 443
@@ -36,7 +93,7 @@ proxies:
   country: HK
   tcp: true
   skip-cert-verify: true
-- name: "\u95EA\u8FDE\u65E5\u672C\U0001F1EF\U0001F1F5"
+- name: 闪连日本🇯🇵
   type: trojan
   server: 38.207.136.202
   port: 443
@@ -44,7 +101,7 @@ proxies:
   country: JP
   tcp: true
   skip-cert-verify: true
-- name: "\u95EA\u8FDE\u97E9\u56FD\U0001F1F0\U0001F1F7"
+- name: 闪连韩国🇰🇷
   type: trojan
   server: 211.55.157.178
   port: 443
@@ -52,7 +109,7 @@ proxies:
   country: KR
   tcp: true
   skip-cert-verify: true
-- name: "\u95EA\u8FDE\u65B0\u52A0\u5761\U0001F1F8\U0001F1EC"
+- name: 闪连新加坡🇸🇬
   type: trojan
   server: 149.28.151.140
   port: 443
@@ -60,7 +117,7 @@ proxies:
   country: SP
   tcp: true
   skip-cert-verify: true
-- name: "\u95EA\u8FDE\u53F0\u6E7E\U0001F1E8\U0001F1F3"
+- name: 闪连台湾🇨🇳
   type: trojan
   server: 220.130.58.29
   port: 443
@@ -72,44 +129,68 @@ proxy-groups:
 - name: SiHai
   type: select
   proxies:
-  - "\u81EA\u52A8"
-  - "\u8D1F\u8F7D\u5747\u8861"
-  - "\u65E5\u672C1\U0001F1EF\U0001F1F5"
-  - "\u9999\u8549\U0001F34C\u8282\u70B9"
-  - onsky
-  - "\u95EA\u8FDE\u9999\u6E2F\U0001F1ED\U0001F1F0"
-  - "\u95EA\u8FDE\u65E5\u672C\U0001F1EF\U0001F1F5"
-  - "\u95EA\u8FDE\u97E9\u56FD\U0001F1F0\U0001F1F7"
-  - "\u95EA\u8FDE\u65B0\u52A0\u5761\U0001F1F8\U0001F1EC"
-  - "\u95EA\u8FDE\u53F0\u6E7E\U0001F1E8\U0001F1F3"
-- name: "\u81EA\u52A8"
+  - 自动
+  - 负载均衡
+  - 香港移动专线🇭🇰
+  - 香港移动专线2🇭🇰
+  - 香港联通专线🇭🇰
+  - 香港联通专线2🇭🇰
+  - 香港电信专线🇭🇰
+  - 香港电信专线2🇭🇰
+  - 日本IPEL专线🇭🇰
+  - 日本专线🇯🇵
+  - 香蕉🍌
+  - onskr
+  - 闪连香港🇭🇰
+  - 闪连日本🇯🇵
+  - 闪连韩国🇰🇷
+  - 闪连新加坡🇸🇬
+  - 闪连台湾🇨🇳
+  - 蜜蜂🐝
+- name: 自动
   type: url-test
   proxies:
-  - "\u65E5\u672C1\U0001F1EF\U0001F1F5"
-  - "\u9999\u8549\U0001F34C\u8282\u70B9"
-  - onsky
-  - "\u95EA\u8FDE\u9999\u6E2F\U0001F1ED\U0001F1F0"
-  - "\u95EA\u8FDE\u65E5\u672C\U0001F1EF\U0001F1F5"
-  - "\u95EA\u8FDE\u97E9\u56FD\U0001F1F0\U0001F1F7"
-  - "\u95EA\u8FDE\u65B0\u52A0\u5761\U0001F1F8\U0001F1EC"
-  - "\u95EA\u8FDE\u53F0\u6E7E\U0001F1E8\U0001F1F3"
+  - 香港移动专线🇭🇰
+  - 香港移动专线2🇭🇰
+  - 香港联通专线🇭🇰
+  - 香港联通专线2🇭🇰
+  - 香港电信专线🇭🇰
+  - 香港电信专线2🇭🇰
+  - 日本IPEL专线🇭🇰
+  - 日本专线🇯🇵
+  - 香蕉🍌
+  - onskr
+  - 闪连香港🇭🇰
+  - 闪连日本🇯🇵
+  - 闪连韩国🇰🇷
+  - 闪连新加坡🇸🇬
+  - 闪连台湾🇨🇳
+  - 蜜蜂🐝
   url: http://www.gstatic.com/generate_204
   interval: 300
-- name: "\u8D1F\u8F7D\u5747\u8861"
+- name: 负载均衡
   type: load-balance
   proxies:
-  - "\u65E5\u672C1\U0001F1EF\U0001F1F5"
-  - "\u9999\u8549\U0001F34C\u8282\u70B9"
-  - onsky
-  - "\u95EA\u8FDE\u9999\u6E2F\U0001F1ED\U0001F1F0"
-  - "\u95EA\u8FDE\u65E5\u672C\U0001F1EF\U0001F1F5"
-  - "\u95EA\u8FDE\u97E9\u56FD\U0001F1F0\U0001F1F7"
-  - "\u95EA\u8FDE\u65B0\u52A0\u5761\U0001F1F8\U0001F1EC"
-  - "\u95EA\u8FDE\u53F0\u6E7E\U0001F1E8\U0001F1F3"
+  - 香港移动专线🇭🇰
+  - 香港移动专线2🇭🇰
+  - 香港联通专线🇭🇰
+  - 香港联通专线2🇭🇰
+  - 香港电信专线🇭🇰
+  - 香港电信专线2🇭🇰
+  - 日本IPEL专线🇭🇰
+  - 日本专线🇯🇵
+  - 香蕉🍌
+  - onskr
+  - 闪连香港🇭🇰
+  - 闪连日本🇯🇵
+  - 闪连韩国🇰🇷
+  - 闪连新加坡🇸🇬
+  - 闪连台湾🇨🇳
+  - 蜜蜂🐝
   strategy: round-robin
   disable-udp: true
 rules:
 - DOMAIN-SUFFIX,google.com,SiHai
-- "DOMAIN-SUFFIX,facebook.com,\u8D1F\u8F7D\u5747\u8861"
+- "DOMAIN-SUFFIX,facebook.com,负载均衡"
 - GEOIP,CN,DIRECT
 - MATCH,SiHai
