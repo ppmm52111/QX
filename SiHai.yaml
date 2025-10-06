@@ -9,7 +9,7 @@ proxies:
   type: trojan
   server: 120.232.159.56
   port: 3387
-  password: 463dab88235b4ddab655b38eaa4549d8
+  password: bb69e53dbbd04a28bfda86e7c215aa61
   country: HK
   tcp: true
   skip-cert-verify: true
@@ -17,7 +17,7 @@ proxies:
   type: trojan
   server: 59.37.173.52
   port: 3387
-  password: 463dab88235b4ddab655b38eaa4549d8
+  password: bb69e53dbbd04a28bfda86e7c215aa61
   country: HK
   tcp: true
   skip-cert-verify: true
@@ -25,7 +25,7 @@ proxies:
   type: trojan
   server: 58.254.183.231
   port: 3387
-  password: 463dab88235b4ddab655b38eaa4549d8
+  password: bb69e53dbbd04a28bfda86e7c215aa61
   country: HK
   tcp: true
   skip-cert-verify: true
@@ -33,7 +33,7 @@ proxies:
   type: trojan
   server: 120.232.159.57
   port: 3387
-  password: 463dab88235b4ddab655b38eaa4549d8
+  password: bb69e53dbbd04a28bfda86e7c215aa61
   country: HK
   tcp: true
   skip-cert-verify: true
@@ -41,7 +41,7 @@ proxies:
   type: trojan
   server: 58.254.183.232
   port: 3387
-  password: 463dab88235b4ddab655b38eaa4549d8
+  password: bb69e53dbbd04a28bfda86e7c215aa61
   country: HK
   tcp: true
   skip-cert-verify: true
@@ -49,7 +49,7 @@ proxies:
   type: trojan
   server: 59.37.173.53
   port: 3387
-  password: 463dab88235b4ddab655b38eaa4549d8
+  password: bb69e53dbbd04a28bfda86e7c215aa61
   country: HK
   tcp: true
   skip-cert-verify: true
@@ -57,7 +57,7 @@ proxies:
   type: trojan
   server: 202.101.49.48
   port: 3387
-  password: 463dab88235b4ddab655b38eaa4549d8
+  password: bb69e53dbbd04a28bfda86e7c215aa61
   country: HK
   tcp: true
   skip-cert-verify: true
@@ -89,7 +89,7 @@ proxies:
   type: trojan
   server: 183.179.43.253
   port: 443
-  password: 463dab88235b4ddab655b38eaa4549d8
+  password: bb69e53dbbd04a28bfda86e7c215aa61
   country: HK
   tcp: true
   skip-cert-verify: true
@@ -97,7 +97,7 @@ proxies:
   type: trojan
   server: 38.207.136.202
   port: 443
-  password: 463dab88235b4ddab655b38eaa4549d8
+  password: bb69e53dbbd04a28bfda86e7c215aa61
   country: JP
   tcp: true
   skip-cert-verify: true
@@ -105,7 +105,7 @@ proxies:
   type: trojan
   server: 211.55.157.178
   port: 443
-  password: 463dab88235b4ddab655b38eaa4549d8
+  password: bb69e53dbbd04a28bfda86e7c215aa61
   country: KR
   tcp: true
   skip-cert-verify: true
@@ -113,7 +113,7 @@ proxies:
   type: trojan
   server: 149.28.151.140
   port: 443
-  password: 463dab88235b4ddab655b38eaa4549d8
+  password: bb69e53dbbd04a28bfda86e7c215aa61
   country: SP
   tcp: true
   skip-cert-verify: true
@@ -121,7 +121,7 @@ proxies:
   type: trojan
   server: 220.130.58.29
   port: 443
-  password: 463dab88235b4ddab655b38eaa4549d8
+  password: bb69e53dbbd04a28bfda86e7c215aa61
   country: CH
   tcp: true
   skip-cert-verify: true
