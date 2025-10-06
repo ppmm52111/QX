@@ -85,6 +85,13 @@ proxies:
   password: amazonskr05
   udp: false
   cipher: aes-256-cfb
+- name: VIP(KR, Incheon)-gcm
+  type: ss
+  server: 3.34.143.180
+  port: 80
+  password: dada0801
+  udp: false
+  cipher: aes-256-gcm
 - name: 闪连香港🇭🇰
   type: trojan
   server: 183.179.43.253
@@ -141,6 +148,7 @@ proxy-groups:
   - 日本专线🇯🇵
   - 香蕉🍌
   - onskr
+  - VIP(KR, Incheon)-gcm
   - 闪连香港🇭🇰
   - 闪连日本🇯🇵
   - 闪连韩国🇰🇷
@@ -160,6 +168,7 @@ proxy-groups:
   - 日本专线🇯🇵
   - 香蕉🍌
   - onskr
+  - VIP(KR, Incheon)-gcm
   - 闪连香港🇭🇰
   - 闪连日本🇯🇵
   - 闪连韩国🇰🇷
@@ -181,6 +190,7 @@ proxy-groups:
   - 日本专线🇯🇵
   - 香蕉🍌
   - onskr
+  - VIP(KR, Incheon)-gcm
   - 闪连香港🇭🇰
   - 闪连日本🇯🇵
   - 闪连韩国🇰🇷
