@@ -80,9 +80,9 @@ proxies:
   tcp: true
 - name: onskr
   type: ss
-  server: 13.127.131.81
-  port: 443
-  password: amazonskr05
+  server: 13.55.184.60
+  port: 80
+  password: dada0801
   udp: false
   cipher: aes-256-cfb
 - name: VIP(KR, Incheon)-gcm
