@@ -126,7 +126,7 @@ proxies:
   skip-cert-verify: true
 - name: 闪连台湾🇨🇳
   type: trojan
-  server: 220.130.58.29
+  server: 220.130.58.79
   port: 443
   password: bb69e53dbbd04a28bfda86e7c215aa61
   country: CH
