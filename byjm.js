@@ -15,7 +15,7 @@ dns:
     - tls://1.0.0.1:853
     - tls://dns.google:853
 proxies:
-  - name: "å¥\x97é¤\x90å\x88°æ\x9C\x9F:2025-10-13"
+  - name: "å¥\x97é¤\x90å\x88°æ\x9C\x9F:2025-10-14"
     type: ss
     server: 127.0.0.1
     port: 443
