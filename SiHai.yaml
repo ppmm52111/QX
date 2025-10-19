@@ -63,10 +63,10 @@ proxies:
   skip-cert-verify: true
 - name: 日本专线🇯🇵
   type: trojan
-  server: 49.212.170.40
+  server: 47.242.225.242
   port: 443
   sni: hezijiasuqi.com
-  password: ab3173d2abc7d643b14dbc362e4f79ed
+  password: 92690597d6298061459918a371e8d77d
   tcp: true
   skip-cert-verify: true
 - name: 香蕉🍌
