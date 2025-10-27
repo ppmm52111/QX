@@ -4,7 +4,7 @@ redir-port: 7892
 allow-lan: false
 log-level: info
 proxies:
-- { name:  蜜蜂🐝, type: vmess, server: 38.11.46.214, port: 37009, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, udp: true, tls: true, tfo: false, skip-cert-verify: true, servername: www.47720602.xyz,network: ws, ws-opts: { path: /path/170733132233, headers: { Host: www.32675228.xyz } }, ws-path: //path/171727290808, ws-headers: { Host: www.47720602.xyz } }
+- { name:  蜜蜂🐝, type: vmess, server: 183.240.187.208, port: 42272, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tcp: true,}
 - name: 香港移动专线🇭🇰
   type: trojan
   server: 120.232.159.56
