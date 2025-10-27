@@ -71,8 +71,8 @@ proxies:
   skip-cert-verify: true
 - name: 香蕉🍌
   type: ssr
-  server: 154.26.183.56
-  port: 40089
+  server: 154.17.23.113
+  port: 10337
   password: jklbnm
   protocol: auth_chain_a
   obfs: plain
@@ -80,11 +80,11 @@ proxies:
   tcp: true
 - name: onskr
   type: ss
-  server: 13.38.32.159
-  port: 80
-  password: dada0801
+  server: 18.195.116.149
+  port: 443
+  password: amazonskr05
   udp: false
-  cipher: aes-256-gcm
+  cipher: aes-256-cfb
 - name: VIP(KR, Incheon)-gcm
   type: ss
   server: 18.199.98.206
