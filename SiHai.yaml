@@ -9,7 +9,7 @@ proxies:
   type: trojan
   server: 120.232.159.56
   port: 3387
-  password: 5c1c39060c534200b8caaacfa58ea8dd
+  password: 965edcb6316747959a1f861313c16027
   country: HK
   tcp: true
   skip-cert-verify: true
@@ -17,7 +17,7 @@ proxies:
   type: trojan
   server: 59.37.173.52
   port: 3387
-  password: 5c1c39060c534200b8caaacfa58ea8dd
+  password: 965edcb6316747959a1f861313c16027
   country: HK
   tcp: true
   skip-cert-verify: true
@@ -25,7 +25,7 @@ proxies:
   type: trojan
   server: 58.254.183.231
   port: 3387
-  password: 5c1c39060c534200b8caaacfa58ea8dd
+  password: 965edcb6316747959a1f861313c16027
   country: HK
   tcp: true
   skip-cert-verify: true
@@ -33,7 +33,7 @@ proxies:
   type: trojan
   server: 120.232.159.57
   port: 3387
-  password: 5c1c39060c534200b8caaacfa58ea8dd
+  password: 965edcb6316747959a1f861313c16027
   country: HK
   tcp: true
   skip-cert-verify: true
@@ -41,7 +41,7 @@ proxies:
   type: trojan
   server: 58.254.183.232
   port: 3387
-  password: 5c1c39060c534200b8caaacfa58ea8dd
+  password: 965edcb6316747959a1f861313c16027
   country: HK
   tcp: true
   skip-cert-verify: true
@@ -49,7 +49,7 @@ proxies:
   type: trojan
   server: 59.37.173.53
   port: 3387
-  password: 5c1c39060c534200b8caaacfa58ea8dd
+  password: 965edcb6316747959a1f861313c16027
   country: HK
   tcp: true
   skip-cert-verify: true
@@ -57,7 +57,7 @@ proxies:
   type: trojan
   server: 202.101.49.48
   port: 3387
-  password: 5c1c39060c534200b8caaacfa58ea8dd
+  password: 965edcb6316747959a1f861313c16027
   country: HK
   tcp: true
   skip-cert-verify: true
@@ -80,11 +80,11 @@ proxies:
   tcp: true
 - name: onskr
   type: ss
-  server: 18.195.116.149
-  port: 443
-  password: amazonskr05
+  server: 43.201.108.250
+  port: 80
+  password: dada0801
   udp: false
-  cipher: aes-256-cfb
+  cipher: aes-256-gcm
 - name: VIP(KR, Incheon)-gcm
   type: ss
   server: 18.199.98.206
@@ -96,7 +96,7 @@ proxies:
   type: trojan
   server: 183.179.43.253
   port: 443
-  password: 5c1c39060c534200b8caaacfa58ea8dd
+  password: 965edcb6316747959a1f861313c16027
   country: HK
   tcp: true
   skip-cert-verify: true
@@ -104,7 +104,7 @@ proxies:
   type: trojan
   server: 38.207.136.202
   port: 443
-  password: 5c1c39060c534200b8caaacfa58ea8dd
+  password: 965edcb6316747959a1f861313c16027
   country: JP
   tcp: true
   skip-cert-verify: true
@@ -112,7 +112,7 @@ proxies:
   type: trojan
   server: 211.55.157.178
   port: 443
-  password: 5c1c39060c534200b8caaacfa58ea8dd
+  password: 965edcb6316747959a1f861313c16027
   country: KR
   tcp: true
   skip-cert-verify: true
@@ -120,7 +120,7 @@ proxies:
   type: trojan
   server: 149.28.151.140
   port: 443
-  password: 5c1c39060c534200b8caaacfa58ea8dd
+  password: 965edcb6316747959a1f861313c16027
   country: SP
   tcp: true
   skip-cert-verify: true
@@ -128,7 +128,7 @@ proxies:
   type: trojan
   server: 220.130.58.79
   port: 443
-  password: 5c1c39060c534200b8caaacfa58ea8dd
+  password: 965edcb6316747959a1f861313c16027
   country: CH
   tcp: true
   skip-cert-verify: true
