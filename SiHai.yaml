@@ -118,7 +118,7 @@ proxies:
   skip-cert-verify: true
 - name: 闪连新加坡🇸🇬
   type: trojan
-  server: 45.145.154.8
+  server: 149.28.151.140
   port: 443
   password: 00445a7ec3d743c9ad478b2ff81d4f3f
   country: SP
