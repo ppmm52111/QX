@@ -9,7 +9,7 @@ proxies:
   type: trojan
   server: 120.232.159.56
   port: 3387
-  password: 965edcb6316747959a1f861313c16027
+  password: 00445a7ec3d743c9ad478b2ff81d4f3f
   country: HK
   tcp: true
   skip-cert-verify: true
@@ -17,7 +17,7 @@ proxies:
   type: trojan
   server: 59.37.173.52
   port: 3387
-  password: 965edcb6316747959a1f861313c16027
+  password: 00445a7ec3d743c9ad478b2ff81d4f3f
   country: HK
   tcp: true
   skip-cert-verify: true
@@ -25,7 +25,7 @@ proxies:
   type: trojan
   server: 58.254.183.231
   port: 3387
-  password: 965edcb6316747959a1f861313c16027
+  password: 00445a7ec3d743c9ad478b2ff81d4f3f
   country: HK
   tcp: true
   skip-cert-verify: true
@@ -33,7 +33,7 @@ proxies:
   type: trojan
   server: 120.232.159.57
   port: 3387
-  password: 965edcb6316747959a1f861313c16027
+  password: 00445a7ec3d743c9ad478b2ff81d4f3f
   country: HK
   tcp: true
   skip-cert-verify: true
@@ -41,7 +41,7 @@ proxies:
   type: trojan
   server: 58.254.183.232
   port: 3387
-  password: 965edcb6316747959a1f861313c16027
+  password: 00445a7ec3d743c9ad478b2ff81d4f3f
   country: HK
   tcp: true
   skip-cert-verify: true
@@ -49,15 +49,15 @@ proxies:
   type: trojan
   server: 59.37.173.53
   port: 3387
-  password: 965edcb6316747959a1f861313c16027
+  password: 00445a7ec3d743c9ad478b2ff81d4f3f
   country: HK
   tcp: true
   skip-cert-verify: true
 - name: 日本IPEL专线🇯🇵
   type: trojan
-  server: 202.101.49.48
+  server: 202.101.49.51
   port: 3387
-  password: 965edcb6316747959a1f861313c16027
+  password: 00445a7ec3d743c9ad478b2ff81d4f3f
   country: HK
   tcp: true
   skip-cert-verify: true
@@ -96,7 +96,7 @@ proxies:
   type: trojan
   server: 183.179.43.253
   port: 443
-  password: 965edcb6316747959a1f861313c16027
+  password: 00445a7ec3d743c9ad478b2ff81d4f3f
   country: HK
   tcp: true
   skip-cert-verify: true
@@ -104,7 +104,7 @@ proxies:
   type: trojan
   server: 38.207.136.202
   port: 443
-  password: 965edcb6316747959a1f861313c16027
+  password: 00445a7ec3d743c9ad478b2ff81d4f3f
   country: JP
   tcp: true
   skip-cert-verify: true
@@ -112,7 +112,7 @@ proxies:
   type: trojan
   server: 211.55.157.178
   port: 443
-  password: 965edcb6316747959a1f861313c16027
+  password: 00445a7ec3d743c9ad478b2ff81d4f3f
   country: KR
   tcp: true
   skip-cert-verify: true
@@ -120,7 +120,7 @@ proxies:
   type: trojan
   server: 45.145.154.8
   port: 443
-  password: 965edcb6316747959a1f861313c16027
+  password: 00445a7ec3d743c9ad478b2ff81d4f3f
   country: SP
   tcp: true
   skip-cert-verify: true
@@ -128,7 +128,7 @@ proxies:
   type: trojan
   server: 220.130.58.79
   port: 443
-  password: 965edcb6316747959a1f861313c16027
+  password: 00445a7ec3d743c9ad478b2ff81d4f3f
   country: CH
   tcp: true
   skip-cert-verify: true
