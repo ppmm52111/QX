@@ -102,7 +102,7 @@ proxies:
   skip-cert-verify: true
 - name: 闪连日本🇯🇵
   type: trojan
-  server: 38.207.136.202
+  server: 202.101.49.51
   port: 443
   password: 00445a7ec3d743c9ad478b2ff81d4f3f
   country: JP
