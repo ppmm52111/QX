@@ -9,7 +9,7 @@ proxies:
   type: trojan
   server: 120.232.159.56
   port: 3387
-  password: 00445a7ec3d743c9ad478b2ff81d4f3f
+  password: 233c1dc54dca464a96dae8b22431bf44
   country: HK
   tcp: true
   skip-cert-verify: true
