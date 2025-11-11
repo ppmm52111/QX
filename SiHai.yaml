@@ -1,8 +1,9 @@
 port: 7890
 socks-port: 7891
-redir-port: 7892
-allow-lan: false
+allow-lan: true
+mode: Rule
 log-level: info
+external-controller: 127.0.0.1:9090
 proxies:
 - { name:  蜜蜂🐝, type: vmess, server: 183.240.187.208, port: 42272, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tcp: true,}
 - name: 香港移动专线🇭🇰
@@ -133,72 +134,244 @@ proxies:
   tcp: true
   skip-cert-verify: true
 proxy-groups:
-- name: SiHai
-  type: select
-  proxies:
-  - 自动
-  - 负载均衡
-  - 香港移动专线🇭🇰
-  - 香港移动专线2🇭🇰
-  - 香港联通专线🇭🇰
-  - 香港联通专线2🇭🇰
-  - 香港电信专线🇭🇰
-  - 香港电信专线2🇭🇰
-  - 日本IPEL专线🇯🇵
-  - 日本专线🇯🇵
-  - 香蕉🍌
-  - onskr
-  - VIP(KR, Incheon)-gcm
-  - 闪连香港🇭🇰
-  - 闪连日本🇯🇵
-  - 闪连韩国🇰🇷
-  - 闪连新加坡🇸🇬
-  - 闪连台湾🇨🇳
-  - 蜜蜂🐝
-- name: 自动
-  type: url-test
-  proxies:
-  - 香港移动专线🇭🇰
-  - 香港移动专线2🇭🇰
-  - 香港联通专线🇭🇰
-  - 香港联通专线2🇭🇰
-  - 香港电信专线🇭🇰
-  - 香港电信专线2🇭🇰
-  - 日本IPEL专线🇯🇵
-  - 日本专线🇯🇵
-  - 香蕉🍌
-  - onskr
-  - VIP(KR, Incheon)-gcm
-  - 闪连香港🇭🇰
-  - 闪连日本🇯🇵
-  - 闪连韩国🇰🇷
-  - 闪连新加坡🇸🇬
-  - 闪连台湾🇨🇳
-  - 蜜蜂🐝
-  url: http://www.gstatic.com/generate_204
-  interval: 300
-- name: 负载均衡
-  type: load-balance
-  proxies:
-  - 香港移动专线🇭🇰
-  - 香港移动专线2🇭🇰
-  - 香港联通专线🇭🇰
-  - 香港联通专线2🇭🇰
-  - 香港电信专线🇭🇰
-  - 香港电信专线2🇭🇰
-  - 日本IPEL专线🇯🇵
-  - 日本专线🇯🇵
-  - 香蕉🍌
-  - onskr
-  - VIP(KR, Incheon)-gcm
-  - 闪连香港🇭🇰
-  - 闪连日本🇯🇵
-  - 闪连韩国🇰🇷
-  - 闪连新加坡🇸🇬
-  - 闪连台湾🇨🇳
-  - 蜜蜂🐝
-  strategy: round-robin
-  disable-udp: true
+- name: 🚀 节点选择
+    type: select
+    proxies:
+      - ♻️ 自动选择
+      - 🇭🇰 香港节点
+      - 🇺🇲 美国节点
+      - ☑️ 手动切换
+      - DIRECT
+  - name: ☑️ 手动切换
+    type: select
+    proxies:
+      - 香港移动专线🇭🇰
+      - 香港移动专线2🇭🇰
+      - 香港联通专线🇭🇰
+      - 香港联通专线2🇭🇰
+      - 香港电信专线🇭🇰
+      - 香港电信专线2🇭🇰
+      - 日本IPEL专线🇯🇵
+      - 日本专线🇯🇵
+      - 香蕉🍌
+      - onskr
+      - VIP(KR, Incheon)-gcm
+      - 闪连香港🇭🇰
+      - 闪连日本🇯🇵
+      - 闪连韩国🇰🇷
+      - 闪连新加坡🇸🇬
+      - 闪连台湾🇨🇳
+      - 蜜蜂🐝
+  - name: ♻️ 自动选择
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - 香港移动专线🇭🇰
+      - 香港移动专线2🇭🇰
+      - 香港联通专线🇭🇰
+      - 香港联通专线2🇭🇰
+      - 香港电信专线🇭🇰
+      - 香港电信专线2🇭🇰
+      - 日本IPEL专线🇯🇵
+      - 日本专线🇯🇵
+      - 香蕉🍌
+      - onskr
+      - VIP(KR, Incheon)-gcm
+      - 闪连香港🇭🇰
+      - 闪连日本🇯🇵
+      - 闪连韩国🇰🇷
+      - 闪连新加坡🇸🇬
+      - 闪连台湾🇨🇳
+      - 蜜蜂🐝
+  - name: 📹 油管视频
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - ☑️ 手动切换
+      - DIRECT
+  - name: 🎥 奈飞视频
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - ☑️ 手动切换
+      - DIRECT
+  - name: 🌍 国外媒体
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🎯 全球直连
+      - 香港移动专线🇭🇰
+      - 香港移动专线2🇭🇰
+      - 香港联通专线🇭🇰
+      - 香港联通专线2🇭🇰
+      - 香港电信专线🇭🇰
+      - 香港电信专线2🇭🇰
+      - 日本IPEL专线🇯🇵
+      - 日本专线🇯🇵
+      - 香蕉🍌
+      - onskr
+      - VIP(KR, Incheon)-gcm
+      - 闪连香港🇭🇰
+      - 闪连日本🇯🇵
+      - 闪连韩国🇰🇷
+      - 闪连新加坡🇸🇬
+      - 闪连台湾🇨🇳
+      - 蜜蜂🐝
+  - name: 📲 电报信息
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - 香港移动专线🇭🇰
+      - 香港移动专线2🇭🇰
+      - 香港联通专线🇭🇰
+      - 香港联通专线2🇭🇰
+      - 香港电信专线🇭🇰
+      - 香港电信专线2🇭🇰
+      - 日本IPEL专线🇯🇵
+      - 日本专线🇯🇵
+      - 香蕉🍌
+      - onskr
+      - VIP(KR, Incheon)-gcm
+      - 闪连香港🇭🇰
+      - 闪连日本🇯🇵
+      - 闪连韩国🇰🇷
+      - 闪连新加坡🇸🇬
+      - 闪连台湾🇨🇳
+      - 蜜蜂🐝
+  - name: 🤖 OpenAi
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - ♻️ 自动选择
+      - 🇺🇲 美国节点
+      - ☑️ 手动切换
+      - DIRECT
+  - name: Ⓜ️ 微软服务
+    type: select
+    proxies:
+      - 🎯 全球直连
+      - 🚀 节点选择
+      - 香港移动专线🇭🇰
+      - 香港移动专线2🇭🇰
+      - 香港联通专线🇭🇰
+      - 香港联通专线2🇭🇰
+      - 香港电信专线🇭🇰
+      - 香港电信专线2🇭🇰
+      - 日本IPEL专线🇯🇵
+      - 日本专线🇯🇵
+      - 香蕉🍌
+      - onskr
+      - VIP(KR, Incheon)-gcm
+      - 闪连香港🇭🇰
+      - 闪连日本🇯🇵
+      - 闪连韩国🇰🇷
+      - 闪连新加坡🇸🇬
+      - 闪连台湾🇨🇳
+      - 蜜蜂🐝
+  - name: 🍎 苹果服务
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - 香港移动专线🇭🇰
+      - 香港移动专线2🇭🇰
+      - 香港联通专线🇭🇰
+      - 香港联通专线2🇭🇰
+      - 香港电信专线🇭🇰
+      - 香港电信专线2🇭🇰
+      - 日本IPEL专线🇯🇵
+      - 日本专线🇯🇵
+      - 香蕉🍌
+      - onskr
+      - VIP(KR, Incheon)-gcm
+      - 闪连香港🇭🇰
+      - 闪连日本🇯🇵
+      - 闪连韩国🇰🇷
+      - 闪连新加坡🇸🇬
+      - 闪连台湾🇨🇳
+      - 蜜蜂🐝
+  - name: 📢 谷歌FCM
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+      - 香港移动专线🇭🇰
+      - 香港移动专线2🇭🇰
+      - 香港联通专线🇭🇰
+      - 香港联通专线2🇭🇰
+      - 香港电信专线🇭🇰
+      - 香港电信专线2🇭🇰
+      - 日本IPEL专线🇯🇵
+      - 日本专线🇯🇵
+      - 香蕉🍌
+      - onskr
+      - VIP(KR, Incheon)-gcm
+      - 闪连香港🇭🇰
+      - 闪连日本🇯🇵
+      - 闪连韩国🇰🇷
+      - 闪连新加坡🇸🇬
+      - 闪连台湾🇨🇳
+      - 蜜蜂🐝
+  - name: 🎯 全球直连
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 节点选择
+      - ♻️ 自动选择
+  - name: 🛑 全球拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🍃 应用净化
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - 🚀 节点选择
+      - 🎯 全球直连
+      - ♻️ 自动选择
+      - 香港移动专线🇭🇰
+      - 香港移动专线2🇭🇰
+      - 香港联通专线🇭🇰
+      - 香港联通专线2🇭🇰
+      - 香港电信专线🇭🇰
+      - 香港电信专线2🇭🇰
+      - 日本IPEL专线🇯🇵
+      - 日本专线🇯🇵
+      - 香蕉🍌
+      - onskr
+      - VIP(KR, Incheon)-gcm
+      - 闪连香港🇭🇰
+      - 闪连日本🇯🇵
+      - 闪连韩国🇰🇷
+      - 闪连新加坡🇸🇬
+      - 闪连台湾🇨🇳
+      - 蜜蜂🐝
+  - name: 🇭🇰 香港节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 50
+    proxies:
+      - DIRECT
+  - name: 🇺🇲 美国节点
+    type: url-test
+    url: http://www.gstatic.com/generate_204
+    interval: 300
+    tolerance: 150
+    proxies:
+      - DIRECT
 rules:
   - PROCESS-NAME,cfnat-android-arm64,🎯 全球直连
   - PROCESS-NAME,cfnat-darwin-amd64,🎯 全球直连
