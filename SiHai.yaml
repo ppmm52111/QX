@@ -134,7 +134,7 @@ proxies:
   tcp: true
   skip-cert-verify: true
 proxy-groups:
-- name: 🚀 节点选择
+  - name: 🚀 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
