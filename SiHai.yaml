@@ -17,7 +17,7 @@ proxies:
   type: trojan
   server: 120.232.159.56
   port: 3387
-  password: d803377c0a474f0a85734c1d663b5437
+  password: b1909bb119f444af869343b4210dbc2e
   country: HK
   tcp: true
   skip-cert-verify: true
@@ -25,7 +25,7 @@ proxies:
   type: trojan
   server: 59.37.173.52
   port: 3387
-  password: d803377c0a474f0a85734c1d663b5437
+  password: b1909bb119f444af869343b4210dbc2e
   country: HK
   tcp: true
   skip-cert-verify: true
@@ -33,7 +33,7 @@ proxies:
   type: trojan
   server: 58.254.183.231
   port: 3387
-  password: d803377c0a474f0a85734c1d663b5437
+  password: b1909bb119f444af869343b4210dbc2e
   country: HK
   tcp: true
   skip-cert-verify: true
@@ -41,7 +41,7 @@ proxies:
   type: trojan
   server: 120.232.159.57
   port: 3387
-  password: d803377c0a474f0a85734c1d663b5437
+  password: b1909bb119f444af869343b4210dbc2e
   country: HK
   tcp: true
   skip-cert-verify: true
@@ -49,7 +49,7 @@ proxies:
   type: trojan
   server: 58.254.183.232
   port: 3387
-  password: d803377c0a474f0a85734c1d663b5437
+  password: b1909bb119f444af869343b4210dbc2e
   country: HK
   tcp: true
   skip-cert-verify: true
@@ -57,7 +57,7 @@ proxies:
   type: trojan
   server: 59.37.173.53
   port: 3387
-  password: d803377c0a474f0a85734c1d663b5437
+  password: b1909bb119f444af869343b4210dbc2e
   country: HK
   tcp: true
   skip-cert-verify: true
@@ -65,7 +65,7 @@ proxies:
   type: trojan
   server: 202.101.49.51
   port: 3387
-  password: d803377c0a474f0a85734c1d663b5437
+  password: b1909bb119f444af869343b4210dbc2e
   country: HK
   tcp: true
   skip-cert-verify: true
@@ -104,7 +104,7 @@ proxies:
   type: trojan
   server: 183.179.43.253
   port: 443
-  password: d803377c0a474f0a85734c1d663b5437
+  password: b1909bb119f444af869343b4210dbc2e
   country: HK
   tcp: true
   skip-cert-verify: true
@@ -112,7 +112,7 @@ proxies:
   type: trojan
   server: 38.207.136.202
   port: 443
-  password: d803377c0a474f0a85734c1d663b5437
+  password: b1909bb119f444af869343b4210dbc2e
   country: JP
   tcp: true
   skip-cert-verify: true
@@ -120,7 +120,7 @@ proxies:
   type: trojan
   server: 211.55.157.178
   port: 443
-  password: d803377c0a474f0a85734c1d663b5437
+  password: b1909bb119f444af869343b4210dbc2e
   country: KR
   tcp: true
   skip-cert-verify: true
@@ -128,7 +128,7 @@ proxies:
   type: trojan
   server: 149.28.151.140
   port: 443
-  password: d803377c0a474f0a85734c1d663b5437
+  password: b1909bb119f444af869343b4210dbc2e
   country: SP
   tcp: true
   skip-cert-verify: true
@@ -136,7 +136,7 @@ proxies:
   type: trojan
   server: 220.130.58.79
   port: 443
-  password: d803377c0a474f0a85734c1d663b5437
+  password: b1909bb119f444af869343b4210dbc2e
   country: CH
   tcp: true
   skip-cert-verify: true
