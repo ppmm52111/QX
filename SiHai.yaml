@@ -63,8 +63,8 @@ proxies:
   skip-cert-verify: true
 - name: 日本IPEL专线🇯🇵
   type: trojan
-  server: 202.101.49.51
-  port: 3387
+  server: 124.151.43.12
+  port: 3388
   password: b1909bb119f444af869343b4210dbc2e
   country: HK
   tcp: true
